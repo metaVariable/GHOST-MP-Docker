@@ -7,6 +7,7 @@ RUN apt-get install -y --no-install-recommends \
                         wget \
                         make \
                         g++ \
+                        ssh \
                         openmpi-bin \
                         libopenmpi-dev \
                         libboost-dev
