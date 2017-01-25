@@ -20,7 +20,7 @@ Please refer to [here](http://www.bi.cs.titech.ac.jp/ghostmp/manual.html) for de
 
 ## Interactive mode
 ```
-docker run -it ghostmp  /bin/bash
+docker run -it ghostmp
 ./ghostmp_makedb -i db.fasta -o db
 mpirun -n NUM_PROCESS ./ghostmp_search -i query.fasta -d db -o result
 ...
@@ -29,7 +29,7 @@ exit
 ## Interactive mode (data mount)
 In this command, your current directory $(pwd) will be mounted to [/data] path in container.
 ```
-docker run -it -v $(pwd):/data/  ghostmp  /bin/bash
+docker run -it -v $(pwd):/data/  ghostmp
 ./ghostmp_makedb -i /data/db.fasta -o /data/db
 mpirun -n NUM_PROCESS ./ghostmp_search -i /data/query.fasta -d /data/db -o /data/result
 ...
