@@ -15,3 +15,5 @@ RUN wget -P /tmp http://www.bi.cs.titech.ac.jp/ghostmp/releases/ghostmp-1.3.3.ta
     tar zxf /tmp/ghostmp-1.3.3.tar.gz  -C /opt && \
     rm /tmp/ghostmp-1.3.3.tar.gz 
 RUN cd /opt/ghostmp-1.3.3/src && make
+
+WORKDIR /opt/ghostmp-1.3.3/src
