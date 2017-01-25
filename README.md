@@ -2,7 +2,7 @@
 
 
 > GHOST-MP is a parallel sequence similarity search tool. It searches for similar sequences among nucleotide query sequences and amino acid sequence database like BLASTX. GHOST-MP runs on a distributed memory system and processes query sequences in parallel. It could run on over 100,000 CPU cores.  
-> http://www.bi.cs.titech.ac.jp/ghostmp/manual.html
+> http://www.bi.cs.titech.ac.jp/ghostmp/
 
 ## Build
 ```
