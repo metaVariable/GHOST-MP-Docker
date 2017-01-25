@@ -22,6 +22,7 @@ Please refer to [here](http://www.bi.cs.titech.ac.jp/ghostmp/manual.html) for de
 ```
 docker run -it ghostmp  /bin/bash
 ./ghostmp_makedb -i db.fasta -o db
+mpirun -n NUM_PROCESS ./ghostmp_search -i query.fasta -d db -o result
 ...
 exit
 ```
@@ -30,6 +31,7 @@ In this command, your current directory $(pwd) will be mounted to [/data] path i
 ```
 docker run -it -v $(pwd):/data/  ghostmp  /bin/bash
 ./ghostmp_makedb -i /data/db.fasta -o /data/db
+mpirun -n NUM_PROCESS ./ghostmp_search -i /data/query.fasta -d /data/db -o /data/result
 ...
 exit
 ```
