@@ -16,6 +16,8 @@ docker build . -t ghostmp
 
 ## Usage 
 
+Please refer to [here](http://www.bi.cs.titech.ac.jp/ghostmp/manual.html) for details of command.
+
 ## Interactive mode
 ```
 docker run -it ghostmp  /bin/bash
@@ -31,5 +33,3 @@ docker run -it -v $(pwd):/data/  ghostmp  /bin/bash
 ...
 exit
 ```
-
-Please refer to [here](http://www.bi.cs.titech.ac.jp/ghostmp/manual.html) for details of command.
