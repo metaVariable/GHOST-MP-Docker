@@ -1,9 +1,10 @@
 # GHOST-MP-Docker
 
-
-> GHOST-MP is a parallel sequence similarity search tool. It searches for similar sequences among nucleotide query sequences and amino acid sequence database like BLASTX. GHOST-MP runs on a distributed memory system and processes query sequences in parallel. It could run on over 100,000 CPU cores.  
+> GHOST-MP is a parallel sequence similarity search tool. It searches for similar sequences among nucleotide query sequences and amino acid sequence database like BLASTX.
 > http://www.bi.cs.titech.ac.jp/ghostmp/
 
+## Note
+* This Docker image works on only 1 node (1 container)..
 
 ## Usage 
 * Please refer to [here](http://www.bi.cs.titech.ac.jp/ghostmp/manual.html) for details of command.
